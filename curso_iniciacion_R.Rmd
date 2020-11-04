@@ -1,0 +1,91 @@
+---
+title: "Iniciación en R aplicado a las Ciencias Ambientales"
+author: "**Gina Berrones**"        
+date: "11/05/2020"
+output: html_document
+---
+
+## Introducción
+
+#### R es el lenguaje y ambiente de programación más popular en el mundo para análisis estadísticos, exploración, presentación y visualización de datos. 
+
+#### Al ser un software de acceso libre y gratuito su funcionalidad se extiende continuamente. 
+
+#### Existe una enorme comunidad de usuarios que brindan soporte y generan librerías de alta calidad que se pueden utilizar para afrontar diferentes retos. 
+
+#### El objetivo de este curso es iniciar fácilmente a explotar este lenguaje de programación y sus funcionalidades.   
+
+
+## Capítulo 1: Ambiente R
+
+### Instalación de R y R Studio
+
+#### Para instalar R, vamos a ir al web browser y vamos a ir al Comprehensive R Archive Network, o CRAN: 
+#### https://cran.rstudio.com/ 
+
+
+#### Para el Sistema Operativo Windows vamos a utilizar el siguiente link para instalar R
+#### https://cran.r-project.org/bin/windows/base/
+
+
+#### En el caso de que su Sistema Operativo sea Linux vamos a utilizar el siguiente link y luego el comando en la terminal 
+#### https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
+
+
+#### Ahora vamos a instalar R Studio, es importante que previamente se haya instalado R. 
+#### En el siguiente link tenemos la opción de escoger el sistema operativo requerido:
+#### https://rstudio.com/products/rstudio/download/#download
+
+
+
+### Entorno R Studio
+
+#### Vamos a explorar los paneles: Editor (de Scripts), Ambiente, Consola, Ayuda 
+
+#### En el panel consola podemos escribir directamente los comandos, incluso lo podemos utilizar como calculadora. A continuación revisaremos algunos ejemplos de operaciones y su sintaxis en R
+
+```{r}
+8+5         #Adición
+25-11       #Sustracción
+5.4*12.3    #Producto
+47/9        #División
+6^2         #Potencia
+sqrt(7)     #Raíz Cuadrada
+log(6)      #Logaritmo Natural
+abs(-8)     #Valor Absoluto
+```
+
+
+#### Generalmente utilizamos el signo ? para obtener ayuda en la consola 
+#### Vamos a probar varios comandos en la consola a continuación:
+
+```{r}
+?help
+help(mean)
+help(plot)
+help(summary)
+```
+
+### Evaluación de expresiones 
+
+#### Podemos ejecutar todos los comandos ya sea en la consola o en el editor como lo hemos hecho ya en nuestros ejemplos anteriores 
+
+
+### Instalación de Paquetes
+
+#### Vamos a instalar algunas de las librerías que usaremos durante este curso, para eso utilizamos el comando install.packages(). Sin embargo a medida que vayamos avanzando veremos la necesidad de instalar nuevas librerías. Es importante recalcar que solamente la instalación de las librerías se las realiza una vez.
+
+```{r}
+install.packages("dplyr")
+install.packages("ggplot2")
+```
+
+
+#### Después de haber instalado las librerías, para ejecutar código que requiera el uso de alguna de éstas, se requiere que primero se cargue la librería, caso contrario no se podrá ejecutar la función que se desee. Para eso utilizamos el comando library(). 
+
+```{r}
+library("dplyr")
+library("ggplot2")
+```
+
+
